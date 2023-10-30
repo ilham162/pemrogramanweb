@@ -4,133 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
     <title>HOMEPAGE</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark body-tertiary text-light">
-        <div class="container-fluid bg-dark text-light">
-          <a class="navbar-brand" href="/home.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/Top Up/top up.html">Top Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/About Me/about me.html">About Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/Others/others.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Others
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Cooming Soon</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-warning" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <div class="containerf text-center">
-        <div class="container-fluid bg-dark text-warning font-weight bold" style="height: 100vh;">
-        <div class="row align-items-center">
-          <div class="col mt-4">
-            <style>
-              #container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-              
-              #typing {
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        #typing {
+            width: 0ch;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 5s steps(22) 1s forwards;
+        }
+        
+        #typing span {
+            color: #fb8c00;
+        }
+        
+        #line {
+            float: left;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            animation: crow 0.5s linear 0s infinite;
+        }
+        
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @keyframes typing {
+            from {
                 width: 0ch;
-                color: white;
-                font-family: sans-serif;
-                font-weight: bold;
-                font-size: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-                animation: typing 5s steps(22) 1s forwards}
-              
-              #typing span {
-                color: #fb8c00;
-              }
-              
-              #line {
-                float: left;
-                color: white;
-                font-weight:bold;
-                font-size: 40px;
-                animation: crow 0.5s linear 0s infinite;
-              }
-              
-              @keyframes typing {
-                from {
-                  width: 0ch;
-                }
-                to {
-                  width: 26ch;
-                }
-              }
-              
-              @keyframes crow {
-                from {
-                  opacity: 0;
-                }
-                to {
-                  opacity: 1;
-                }
-              }
-            </style>
-            </head>
-            <body>
-            </br></br></br>        </br></br></br>
-              <div id="container">
-                <div id="typing">Hello, <span>Welcome to my website</span></div>
-                <div id="line">_</div>
-              </div>
-            </body>
-          </br></br>
-         <div class="spinner-grow text-primary" role="status">
-          <span class="visually-hidden">Loading...</span>
+            }
+            to {
+                width: 26ch;
+            }
+        }
+        
+        @keyframes crow {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark background-color: bl">
+        <div class="container">
+            <a class="navbar-brand" href="/home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Top Up/top up.html">Top Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About Me/about me.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/Others/others.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Coming Soon</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-        <div class="spinner-grow text-secondary" role="status">
-          <span class="visually-hidden">Loading...</span>
+    </nav>
+    <div id="container">
+        <div id="typing">Hello, <span>Welcome to my website</span></div>
+        <div class="spinner-container">
+            <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
-        <div class="spinner-grow text-success" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-grow text-danger" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-grow text-warning" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-grow text-info" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-grow text-light" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-grow text-dark" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        </div>
-      </div>
-</div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
